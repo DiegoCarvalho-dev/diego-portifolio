@@ -20,17 +20,17 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-32">
 
           {/* Projeto 1 */}
           <div className="space-y-6">
             <img
               src={project1Front}
               alt="Projeto 1"
-              className="w-full h-72 object-contain"
+              className="w-full h-72 object-contain md:-translate-x-8"
             />
 
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-md mx-auto text-center">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
               <p className="text-zinc-400 text-sm">
                 Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
@@ -46,10 +46,10 @@ export default function ProjectsSection() {
             <img
               src={project2}
               alt="Projeto 2"
-              className="w-full h-72 object-contain"
+              className="w-full h-72 object-contain md:translate-x-8"
             />
 
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-md mx-auto text-center">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
               <p className="text-zinc-400 text-sm">
                 Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
@@ -65,10 +65,10 @@ export default function ProjectsSection() {
             <img
               src={project3}
               alt="Projeto 3"
-              className="w-full h-72 object-contain"
+              className="w-full h-72 object-contain md:-translate-x-8"
             />
 
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-md mx-auto text-center">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
               <p className="text-zinc-400 text-sm">
                 Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
@@ -84,10 +84,10 @@ export default function ProjectsSection() {
             <img
               src={project4}
               alt="Projeto 4"
-              className="w-full h-72 object-contain"
+              className="w-full h-72 object-contain md:translate-x-8"
             />
 
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-md mx-auto text-center">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
               <p className="text-zinc-400 text-sm">
                 Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Projeto 5 (Mobile) */}
+          {/* Projeto 5 */}
           <div className="space-y-6 md:col-span-2 flex flex-col items-center">
             <img
               src={project5}
@@ -106,9 +106,9 @@ export default function ProjectsSection() {
               className="w-full max-w-sm h-72 object-contain"
             />
 
-            <div className="space-y-2 text-center">
+            <div className="space-y-2 text-center max-w-md">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
-              <p className="text-zinc-400 text-sm max-w-md mx-auto">
+              <p className="text-zinc-400 text-sm">
                 Breve descrição do projeto mobile, explicando objetivos, desenvolvimento e soluções aplicadas.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
