@@ -1,8 +1,8 @@
 export default function ProjectsSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center py-24 relative z-10">
-      <div className="w-full max-w-6xl px-6 space-y-16">
-        
+    <section className="bg-black py-32">
+      <div className="max-w-6xl mx-auto px-6 space-y-24">
+
         {/* Header */}
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
@@ -15,50 +15,73 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        {/* Placeholder dos projetos */}
-        <div className="space-y-24">
-          
-          {/* Projeto placeholder */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            
-            {/* Mockup */}
-            <div className="w-full md:w-1/2 h-64 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
-              Mockup do projeto (Notebook + celular)
+        {/* Grid de projetos */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
+
+          {/* Projeto 1 */}
+          <div className="space-y-6">
+            <div className="h-72 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
+              Mockup (Notebook + celular)
             </div>
 
-            {/* Info */}
-            <div className="w-full md:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold">
-                Nome do projeto
-              </h3>
-
-              <p className="text-zinc-400">
-                Breve descrição do projeto, explicando o objetivo e o que foi desenvolvido.
+            <div className="space-y-2">
+              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <p className="text-zinc-400 text-sm">
+                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
               </p>
-
-              <span className="text-sm text-zinc-500 uppercase tracking-widest">
-                Tecnologias utilizadas
+              <span className="text-xs text-zinc-500 uppercase tracking-widest">
+                React • TypeScript • Tailwind
               </span>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-            
-            <div className="w-full md:w-1/2 h-64 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
-              Mockup do projeto (Notebook + celular)
+          {/* Projeto 2 */}
+          <div className="space-y-6">
+            <div className="h-72 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
+              Mockup (Notebook + celular)
             </div>
 
-            <div className="w-full md:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold">
-                Nome do projeto
-              </h3>
-
-              <p className="text-zinc-400">
-                Breve descrição do projeto, explicando o objetivo e o que foi desenvolvido.
+            <div className="space-y-2">
+              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <p className="text-zinc-400 text-sm">
+                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
               </p>
+              <span className="text-xs text-zinc-500 uppercase tracking-widest">
+                Vue • JavaScript • CSS
+              </span>
+            </div>
+          </div>
 
-              <span className="text-sm text-zinc-500 uppercase tracking-widest">
-                Tecnologias utilizadas
+          {/* Projeto 3 */}
+          <div className="space-y-6">
+            <div className="h-72 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
+              Mockup (Notebook + celular)
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <p className="text-zinc-400 text-sm">
+                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+              </p>
+              <span className="text-xs text-zinc-500 uppercase tracking-widest">
+                Python • Django • PostgreSQL
+              </span>
+            </div>
+          </div>
+
+          {/* Projeto 4 */}
+          <div className="space-y-6">
+            <div className="h-72 border border-zinc-800 rounded-xl flex items-center justify-center text-zinc-500">
+              Mockup (Notebook + celular)
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <p className="text-zinc-400 text-sm">
+                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+              </p>
+              <span className="text-xs text-zinc-500 uppercase tracking-widest">
+                Java • Spring • MySQL
               </span>
             </div>
           </div>
