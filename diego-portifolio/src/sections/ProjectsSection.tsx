@@ -109,7 +109,7 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 text-center max-w-md">
-              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <h3 className="text-2xl font-bold">FocusFlow</h3>
               <p className="text-zinc-400 text-sm">
                 O FocusFlow é um aplicativo Android nativo desenvolvido no Android Studio, criado para ajudar na produtividade usando a técnica Pomodoro, com suporte a tarefas diárias, resumo de foco e configurações ajustáveis.
               </p>
