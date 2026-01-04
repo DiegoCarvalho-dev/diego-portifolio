@@ -16,67 +16,67 @@ const skills = [
     name: "Java",
     icon: <FaJava size={56} />,
     description:
-      "Java fortaleceu minha base em orientação a objetos, boas práticas e desenvolvimento back-end ao longo da minha formação.",
+      "Java foi a base do meu desenvolvimento back-end, fortalecendo meu domínio em orientação a objetos, boas práticas e organização de código, aplicados em projetos acadêmicos e full stack.",
   },
   {
     name: "JavaScript",
     icon: <FaJs size={56} />,
     description:
-      "Utilizo JavaScript para criar aplicações web dinâmicas, manipulando lógica, eventos e comportamento da interface.",
+      "Utilizo JavaScript para criar aplicações web dinâmicas, trabalhando com lógica, eventos e interações da interface, tornando as aplicações mais funcionais e responsivas.",
   },
   {
     name: "HTML",
     icon: <FaHtml5 size={56} />,
     description:
-      "Responsável pela estruturação semântica das páginas e organização correta do conteúdo.",
+      "HTML é a base da estrutura dos meus projetos front-end, aplicando boas práticas de HTML5 e semântica para organização correta e acessível do conteúdo.",
   },
   {
     name: "CSS",
     icon: <FaCss3Alt size={56} />,
     description:
-      "Uso CSS para criar layouts modernos, responsivos e alinhados com a identidade visual dos projetos.",
+      "Uso CSS para criar layouts modernos, responsivos e alinhados à identidade visual dos projetos, aplicando boas práticas e conceitos avançados de estilização.",
   },
   {
     name: "Python",
     icon: <FaPython size={56} />,
     description:
-      "Linguagem que utilizo para automações, lógica de programação e integração com APIs.",
+      "Python foi minha primeira linguagem de programação, utilizada em diversos projetos ao longo da minha trajetória, sendo uma base importante para lógica, automações e desenvolvimento back-end.",
   },
   {
     name: "Node.js",
     icon: <FaNodeJs size={56} />,
     description:
-      "Experiência com Node.js no desenvolvimento back-end e criação de APIs simples.",
+      "Possuo conhecimentos básicos em Node.js para desenvolvimento back-end, com foco em APIs e lógica de servidor, e estou em constante evolução nessa tecnologia.",
   },
   {
     name: "Vue.js",
     icon: <SiVuedotjs size={56} />,
     description:
-      "Framework utilizado para construção de interfaces modernas e componentizadas.",
+      "Utilizo Vue.js no desenvolvimento de interfaces modernas e componentizadas, integrando HTML, CSS e JavaScript de forma organizada e produtiva.",
   },
   {
     name: "Docker",
     icon: <FaDocker size={56} />,
     description:
-      "Conhecimento em containers para padronização de ambientes e deploy de aplicações.",
+      "Tenho conhecimento intermediário em Docker, utilizando conteinerização para padronizar ambientes e facilitar a execução de aplicações em projetos profissionais.",
   },
   {
     name: "React",
     icon: <FaReact size={56} />,
     description:
-      "Utilizo React para criar interfaces reativas, organizadas em componentes e com boa escalabilidade.",
+      "Utilizo React em projetos front-end para criação de interfaces componentizadas, com conhecimentos básicos e foco em aprofundar cada vez mais no ecossistema.",
   },
   {
     name: "TypeScript",
     icon: <SiTypescript size={56} />,
     description:
-      "Uso TypeScript para garantir maior segurança, organização e legibilidade no código.",
+      "Trabalho com TypeScript em projetos front-end, aplicando tipagem para maior segurança e organização do código, com conhecimentos básicos em constante evolução.",
   },
   {
     name: "Git",
     icon: <FaGitAlt size={56} />,
     description:
-      "Ferramenta essencial no meu fluxo de trabalho para versionamento e colaboração em projetos.",
+      "Git é uma ferramenta essencial no meu fluxo de trabalho, utilizada para versionamento de código, organização de branches e colaboração eficiente em projetos.",
   },
 ];
 
