@@ -16,7 +16,7 @@ export default function ProjectsSection() {
 
           <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto">
             Aqui você pode conferir alguns projetos que desenvolvi ao longo da
-            minha jornada, aplicando boas práticas, design moderno e tecnologias atuais.
+            minha jornada.
           </p>
         </div>
 
@@ -31,12 +31,12 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 max-w-md mx-auto text-center">
-              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <h3 className="text-2xl font-bold">MicroPigmentação Capilar</h3>
               <p className="text-zinc-400 text-sm">
-                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+                um site institucional moderno e responsivo, desenvolvido para apresentar serviços de Micropigmentação Capilar, com foco em conversão, clareza de informação e experiência do usuário.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
-                React • TypeScript • Tailwind
+                HTML5 • Vue.js 3 • Tailwind
               </span>
             </div>
           </div>
@@ -50,12 +50,12 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 max-w-md mx-auto text-center">
-              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <h3 className="text-2xl font-bold">Site Docax</h3>
               <p className="text-zinc-400 text-sm">
-                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+                Este site pedido pela Docax, foi desenvolvido com foco em apresentar uma solução digital de forma clara, moderna e responsiva. O projeto prioriza uma boa experiência do usuário, com layout organizado, navegação intuitiva e adaptação para diferentes tamanhos de tela.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
-                Vue • JavaScript • CSS
+                Vue • JavaScript • Quasar
               </span>
             </div>
           </div>
@@ -69,12 +69,13 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 max-w-md mx-auto text-center">
-              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <h3 className="text-2xl font-bold">Robótica DocaEdu</h3>
               <p className="text-zinc-400 text-sm">
-                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+                Este site institucional foi desenvolvido sob solicitação da empresa DocaEdu, com foco em apresentar seu programa de Robótica Educacional para escolas de forma clara, profissional e atrativa.
+                O projeto contempla páginas informativas, design responsivo, identidade visual educacional e um sistema de contato integrado, pensado para facilitar a comunicação com escolas interessadas em parcerias.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
-                Python • Django • PostgreSQL
+                HTML5 • CSS • JavaScript
               </span>
             </div>
           </div>
@@ -88,12 +89,13 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 max-w-md mx-auto text-center">
-              <h3 className="text-2xl font-bold">Nome do projeto</h3>
+              <h3 className="text-2xl font-bold">Dashboard B2bit</h3>
               <p className="text-zinc-400 text-sm">
-                Breve descrição do projeto, explicando objetivos, desenvolvimento e soluções aplicadas.
+                Este projeto é um painel administrativo moderno e responsivo. seguindo boas práticas de design e arquitetura.
+                O sistema tem como objetivo fornecer uma plataforma de gestão completa, com dashboard interativo, relatórios, integrações e gerenciamento de usuários.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
-                Java • Spring • MySQL
+                React • Vite • Node.js
               </span>
             </div>
           </div>
@@ -109,10 +111,10 @@ export default function ProjectsSection() {
             <div className="space-y-2 text-center max-w-md">
               <h3 className="text-2xl font-bold">Nome do projeto</h3>
               <p className="text-zinc-400 text-sm">
-                Breve descrição do projeto mobile, explicando objetivos, desenvolvimento e soluções aplicadas.
+                O FocusFlow é um aplicativo Android nativo desenvolvido no Android Studio, criado para ajudar na produtividade usando a técnica Pomodoro, com suporte a tarefas diárias, resumo de foco e configurações ajustáveis.
               </p>
               <span className="text-xs text-zinc-500 uppercase tracking-widest">
-                React Native • Expo • Firebase
+                Kotlin
               </span>
             </div>
           </div>
