@@ -21,6 +21,7 @@ export default function ProjectsSection() {
         <div
           className="text-center space-y-4"
           data-aos="fade-up"
+          data-aos-duration="1400"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             Boas-vindas ao meu portfólio
@@ -34,18 +35,18 @@ export default function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-32">
 
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <img
               src={project1Front}
               alt="Projeto 1"
               className="w-full h-72 object-contain md:-translate-x-12"
-              data-aos="zoom-out-right"
             />
 
-            <div
-              className="space-y-2 max-w-md mx-auto text-center -translate-x-6"
-              data-aos="fade-up"
-            >
+            <div className="space-y-2 max-w-md mx-auto text-center -translate-x-10">
               <h3 className="text-2xl font-bold">MicroPigmentação Capilar</h3>
               <p className="text-zinc-400 text-sm">
                 um site institucional moderno e responsivo, desenvolvido para apresentar serviços de Micropigmentação Capilar, com foco em conversão, clareza de informação e experiência do usuário.
@@ -59,21 +60,21 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <img
               src={project2}
               alt="Projeto 2"
               className="w-full h-72 object-contain md:translate-x-12"
-              data-aos="zoom-out-left"
             />
 
-            <div
-              className="space-y-2 max-w-md mx-auto text-center translate-x-6"
-              data-aos="fade-up"
-            >
+            <div className="space-y-2 max-w-md mx-auto text-center translate-x-10">
               <h3 className="text-2xl font-bold">Site Docax</h3>
               <p className="text-zinc-400 text-sm">
-                Este site pedido pela Docax, foi desenvolvido com foco em apresentar uma solução digital de forma clara, moderna e responsiva. O projeto prioriza uma boa experiência do usuário, com layout organizado, navegação intuitiva e adaptação para diferentes tamanhos de tela.
+                Este site pedido pela Docax, foi desenvolvido com foco em apresentar uma solução digital de forma clara, moderna e responsiva.
               </p>
 
               <div className="flex justify-center gap-3 text-xl">
@@ -84,18 +85,18 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <img
               src={project3}
               alt="Projeto 3"
               className="w-full h-72 object-contain md:-translate-x-12"
-              data-aos="zoom-out-right"
             />
 
-            <div
-              className="space-y-2 max-w-md mx-auto text-center -translate-x-6"
-              data-aos="fade-up"
-            >
+            <div className="space-y-2 max-w-md mx-auto text-center -translate-x-10">
               <h3 className="text-2xl font-bold">Robótica DocaEdu</h3>
               <p className="text-zinc-400 text-sm">
                 Este site institucional foi desenvolvido sob solicitação da empresa DocaEdu, com foco em apresentar seu programa de Robótica Educacional para escolas de forma clara, profissional e atrativa.
@@ -110,21 +111,21 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <img
               src={project4}
               alt="Projeto 4"
               className="w-full h-72 object-contain md:translate-x-12"
-              data-aos="zoom-out-left"
             />
 
-            <div
-              className="space-y-2 max-w-md mx-auto text-center translate-x-6"
-              data-aos="fade-up"
-            >
+            <div className="space-y-2 max-w-md mx-auto text-center translate-x-10">
               <h3 className="text-2xl font-bold">Dashboard B2bit</h3>
               <p className="text-zinc-400 text-sm">
-                Este projeto é um painel administrativo moderno e responsivo. seguindo boas práticas de design e arquitetura.
+                Este projeto é um painel administrativo moderno e responsivo.
                 O sistema tem como objetivo fornecer uma plataforma de gestão completa, com dashboard interativo, relatórios, integrações e gerenciamento de usuários.
               </p>
 
@@ -138,6 +139,7 @@ export default function ProjectsSection() {
           <div
             className="space-y-6 md:col-span-2 flex flex-col items-center"
             data-aos="fade-up"
+            data-aos-duration="1300"
           >
             <img
               src={project5}
@@ -148,7 +150,7 @@ export default function ProjectsSection() {
             <div className="space-y-2 text-center max-w-md">
               <h3 className="text-2xl font-bold">FocusFlow</h3>
               <p className="text-zinc-400 text-sm">
-                O FocusFlow é um aplicativo Android nativo desenvolvido no Android Studio, criado para ajudar na produtividade usando a técnica Pomodoro, com suporte a tarefas diárias, resumo de foco e configurações ajustáveis.
+                O FocusFlow é um aplicativo Android nativo desenvolvido em Kotlin + Jetpack Compose, criado para ajudar na produtividade usando a técnica Pomodoro, com suporte a tarefas diárias, resumo de foco e configurações ajustáveis.
               </p>
 
               <div className="flex justify-center gap-3 text-xl">

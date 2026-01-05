@@ -84,8 +84,11 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="bg-black py-32">
       <div className="max-w-7xl mx-auto px-6 space-y-20">
-
-        <div className="text-center space-y-4">
+        <div
+          className="text-center space-y-4"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
             Habilidades
           </h2>
@@ -96,40 +99,48 @@ export default function SkillsSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className="
-                h-[360px]
-                w-full
-                max-w-[260px]
-                border border-white/20
-                rounded-xl
-                px-6
-                pt-6
-                pb-6
-                hover:scale-105 transition
-              "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={index * 100}
             >
-              <div className="text-center space-y-4">
+              <div
+                className="
+                  h-[360px]
+                  w-full
+                  max-w-[260px]
+                  border border-white/20
+                  rounded-xl
+                  px-6
+                  pt-6
+                  pb-6
+                  overflow-hidden
+                  transform
+                  transition-transform
+                  duration-300
+                  ease-out
+                  hover:scale-105
+                "
+              >
+                <div className="text-center space-y-4">
+                  <div className="flex justify-center text-white">
+                    {skill.icon}
+                  </div>
 
-                <div className="flex justify-center text-white">
-                  {skill.icon}
+                  <h3 className="text-xl font-bold text-white">
+                    {skill.name}
+                  </h3>
+
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    {skill.description}
+                  </p>
                 </div>
-
-                <h3 className="text-xl font-bold text-white">
-                  {skill.name}
-                </h3>
-
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  {skill.description}
-                </p>
-
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
