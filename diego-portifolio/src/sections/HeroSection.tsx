@@ -3,41 +3,68 @@ import Lightning from "../components/Lightning";
 export default function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background animado APENAS do Hero */}
       <Lightning hue={260} xOffset={0} speed={1} intensity={1} size={1} />
 
-      {/* Conteúdo do Hero */}
-      <div className="relative z-10 text-center space-y-4">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
+      <div className="relative z-10 text-center flex flex-col items-center">
+
+        <span
+          className="
+            text-base md:text-lg
+            font-bold
+            text-zinc-300
+            -translate-x-6
+            mb-1
+          "
+        >
+          Opa! meu nome é
+        </span>
+
+        {/* Nome */}
+        <h1
+          className="
+            text-6xl md:text-7xl
+            font-extrabold
+            tracking-tight
+            -translate-x-6
+            mb-3
+          "
+        >
           Diego <span className="text-zinc-400">Carvalho</span>
         </h1>
 
-        <p className="text-zinc-400 text-lg md:text-xl">
+        {/* Stack */}
+        <p
+          className="
+            text-zinc-300
+            text-lg md:text-2xl
+            font-semibold
+            tracking-wide
+            -translate-x-6
+            mt-2
+          "
+        >
           Desenvolvedor Full Stack
         </p>
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-8 pt-6">
-          {/* GitHub */}
+        {/* Redes sociais */}
+        <div className="flex justify-center gap-8 pt-6 -translate-x-6">
           <a
             href="https://github.com/diegocarvalho-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-zinc-300 transition"
+            className="float-soft hover:text-zinc-300 transition"
             aria-label="GitHub"
           >
-            {/* SVG GitHub */}
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.11.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a10.9 10.9 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.68 5.4-5.24 5.68.41.36.77 1.08.77 2.18 0 1.57-.02 2.83-.02 3.22 0 .3.21.66.79.55 4.56-1.53 7.84-5.85 7.84-10.95C23.5 5.74 18.27.5 12 .5z" />
             </svg>
           </a>
 
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/diegocarvalho_06/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-zinc-300 transition"
+            className="float-soft float-soft-delay-1 hover:text-zinc-300 transition"
             aria-label="Instagram"
           >
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -45,12 +72,11 @@ export default function HeroSection() {
             </svg>
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/diegoricardo-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-zinc-300 transition"
+            className="float-soft float-soft-delay-2 hover:text-zinc-300 transition"
             aria-label="LinkedIn"
           >
             <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -58,6 +84,24 @@ export default function HeroSection() {
             </svg>
           </a>
         </div>
+      </div>
+
+      {/* Seta */}
+      <div className="absolute bottom-8 z-10 float-soft">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="text-zinc-400"
+        >
+          <path d="M12 5v14" />
+          <path d="M19 12l-7 7-7-7" />
+        </svg>
       </div>
     </section>
   );
