@@ -6,10 +6,15 @@ export default function AboutSection() {
         <div
           data-aos="fade-right"
           data-aos-duration="1200"
-          className="w-56 h-56 rounded-full bg-zinc-800 flex items-center justify-center text-zinc-500"
+          className="w-60 h-60 rounded-full overflow-hidden bg-zinc-800"
         >
-          Foto
+          <img
+            src="/src/assets/foto_perfil.jpeg"
+            alt="Foto de Diego Carvalho"
+            className="w-full h-full object-cover"
+          />
         </div>
+
 
         <div
           data-aos="fade-left"
