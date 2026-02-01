@@ -1,4 +1,14 @@
 export default function AboutSection() {
+  const handleDownloadCV = () => {
+    const confirmDownload = window.confirm(
+      "Aviso:\n\nEste currículo foi criado no início da minha carreira, então algumas informações podem estar desatualizadas.\n\nDeseja continuar?"
+    );
+
+    if (confirmDownload) {
+      window.open("/cv/Diego_Carvalho_CV.pdf", "_blank");
+    }
+  };
+
   return (
     <section className="bg-black py-32">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
@@ -14,7 +24,6 @@ export default function AboutSection() {
             className="w-full h-full object-cover"
           />
         </div>
-
 
         <div
           data-aos="fade-left"
@@ -37,16 +46,15 @@ export default function AboutSection() {
             <li>🚀 Apaixonado por tecnologia e aprendizado contínuo</li>
           </ul>
 
-          <a
+          <button
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="400"
-            href="/curriculo.pdf"
-            download
+            onClick={handleDownloadCV}
             className="inline-block mt-6 px-6 py-3 border border-white/70 text-white text-sm uppercase tracking-widest hover:bg-white hover:text-black transition"
           >
             Baixar currículo
-          </a>
+          </button>
         </div>
       </div>
     </section>
