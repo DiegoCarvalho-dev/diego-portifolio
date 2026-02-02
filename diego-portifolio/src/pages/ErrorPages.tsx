@@ -1,94 +1,111 @@
 import React from 'react';
-import { ErrorPage } from '@/components';
 
-/**
- * Exemplo Prático - Página 404 com Lightning
- * 
- * Este arquivo demonstra como usar o componente Lightning
- * em uma página de erro real do seu portfolio
- * 
- * Para usar:
- * 1. Importe este componente no seu App.tsx
- * 2. Adicione como fallback route no React Router
- */
+// Páginas de erro simplificadas para build
+// Podem ser expandidas posteriormente quando necessário
 
 export function NotFoundPage() {
   return (
-    <ErrorPage
-      code={404}
-      title="Página não encontrada"
-      description="Parece que você chegou em um lugar que não deveria estar. A página desapareceu num relâmpago!"
-      actionButtonText="← Voltar ao Portfolio"
-      onActionClick={() => {
-        window.location.href = '/';
-      }}
-      hue={260}  // Roxo (cor padrão do DirectBits)
-      speed={1.2}
-    />
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '20px',
+      textAlign: 'center'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>404</h1>
+      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Página não encontrada</h2>
+      <p style={{ marginBottom: '2rem', maxWidth: '500px' }}>
+        Parece que você chegou em um lugar que não deveria estar.
+      </p>
+      <button
+        onClick={() => window.location.href = '/'}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: 'white',
+          color: 'black',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
+      >
+        ← Voltar ao Portfolio
+      </button>
+    </div>
   );
 }
 
-/**
- * Exemplo Prático 2 - Erro 500 com Lightning
- */
 export function ServerErrorPage() {
   return (
-    <ErrorPage
-      code={500}
-      title="Erro do Servidor"
-      description="Algo inesperado aconteceu no servidor. Nosso time está trabalhando para corrigir isso!"
-      actionButtonText="Tentar Novamente"
-      onActionClick={() => {
-        window.location.reload();
-      }}
-      hue={0}    // Vermelho para erro crítico
-      speed={1.5}
-    />
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '20px',
+      textAlign: 'center'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>500</h1>
+      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Erro do Servidor</h2>
+      <p style={{ marginBottom: '2rem', maxWidth: '500px' }}>
+        Algo inesperado aconteceu no servidor.
+      </p>
+      <button
+        onClick={() => window.location.reload()}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: 'white',
+          color: 'black',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
+      >
+        Tentar Novamente
+      </button>
+    </div>
   );
 }
 
-/**
- * Exemplo Prático 3 - Manutenção com Lightning
- */
 export function MaintenancePage() {
   return (
-    <ErrorPage
-      code={503}
-      title="Site em Manutenção"
-      description="Estamos atualizando nosso portfolio para trazer novidades. Voltamos em breve!"
-      actionButtonText="Recarregar"
-      onActionClick={() => {
-        window.location.reload();
-      }}
-      hue={30}   // Laranja para aviso
-      speed={1}
-    />
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '20px',
+      textAlign: 'center'
+    }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>503</h1>
+      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Site em Manutenção</h2>
+      <p style={{ marginBottom: '2rem', maxWidth: '500px' }}>
+        Estamos atualizando nosso portfolio para trazer novidades. Voltamos em breve!
+      </p>
+      <button
+        onClick={() => window.location.reload()}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: 'white',
+          color: 'black',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
+      >
+        Recarregar
+      </button>
+    </div>
   );
 }
-
-/**
- * Como integrar no React Router:
- * 
- * import { BrowserRouter, Routes, Route } from 'react-router-dom';
- * import { NotFoundPage, ServerErrorPage, MaintenancePage } from '@/pages/ErrorPages';
- * 
- * function App() {
- *   return (
- *     <BrowserRouter>
- *       <Routes>
- *         <Route path="/" element={<HomePage />} />
- *         <Route path="/projects" element={<ProjectsPage />} />
- *         
- *         {/* Páginas de erro */}
- *         <Route path="/maintenance" element={<MaintenancePage />} />
- *         <Route path="/error" element={<ServerErrorPage />} />
- *         <Route path="*" element={<NotFoundPage />} />
- *       </Routes>
- *     </BrowserRouter>
- *   );
- * }
- * 
- * export default App;
- */
 
 export default NotFoundPage;
