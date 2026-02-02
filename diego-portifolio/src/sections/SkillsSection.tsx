@@ -82,41 +82,44 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="bg-black py-32">
-      <div className="max-w-7xl mx-auto px-6 space-y-20">
+    <section id="skills" className="bg-black py-16 sm:py-24 md:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16 md:space-y-20">
         <div
-          className="text-center space-y-4"
+          className="text-center space-y-3 sm:space-y-4"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white px-2 sm:px-0">
             Habilidades
           </h2>
 
-          <p className="text-zinc-400 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="text-zinc-400 max-w-xs sm:max-w-md md:max-w-2xl mx-auto text-xs sm:text-sm md:text-base lg:text-lg px-2 sm:px-0">
             Tecnologias que fazem parte da minha trajetória como desenvolvedor.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 place-items-center px-2 sm:px-0">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={index * 100}
+              className="w-full flex justify-center"
             >
               <div
                 className="
-                  h-[360px]
                   w-full
-                  max-w-[260px]
-                  border border-white/20
+                  max-w-[220px] sm:max-w-[240px] md:max-w-[260px]
+                  min-h-[280px] sm:min-h-[320px] md:min-h-[340px] lg:min-h-[360px]
+                  border
+                  border-white/20
                   rounded-xl
-                  px-6
-                  pt-6
-                  pb-6
-                  overflow-hidden
+                  px-4 sm:px-5 md:px-6
+                  py-4 sm:py-5 md:py-6
+                  flex
+                  items-start
+                  justify-center
                   transform
                   transition-transform
                   duration-300
@@ -124,16 +127,16 @@ export default function SkillsSection() {
                   hover:scale-105
                 "
               >
-                <div className="text-center space-y-4">
+                <div className="text-center space-y-3 sm:space-y-4">
                   <div className="flex justify-center text-white">
                     {skill.icon}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">
                     {skill.name}
                   </h3>
 
-                  <p className="text-zinc-400 text-sm leading-relaxed">
+                  <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
                     {skill.description}
                   </p>
                 </div>
