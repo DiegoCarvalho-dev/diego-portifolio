@@ -75,7 +75,7 @@ export default function ProjectsSection() {
             />
 
             <div className="space-y-2 max-w-xs sm:max-w-sm md:max-w-md mx-auto text-center lg:translate-x-8 xl:translate-x-10 px-2 sm:px-0">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Site Docax</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Site Executaí</h3>
               <p className="text-zinc-400 text-xs xs:text-sm sm:text-sm md:text-sm leading-relaxed">
                 Este site foi desenvolvido com foco em apresentar uma solução digital de forma clara, moderna e responsiva.
               </p>
