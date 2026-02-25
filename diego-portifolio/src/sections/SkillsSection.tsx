@@ -43,12 +43,6 @@ const skills = [
       "Python foi minha primeira linguagem de programação, utilizada em diversos projetos ao longo da minha trajetória, sendo uma base importante para lógica, automações e desenvolvimento back-end.",
   },
   {
-    name: "Node.js",
-    icon: <FaNodeJs size={56} />,
-    description:
-      "Possuo conhecimentos básicos em Node.js para desenvolvimento back-end, com foco em APIs e lógica de servidor, e estou em constante evolução nessa tecnologia.",
-  },
-  {
     name: "Vue.js",
     icon: <SiVuedotjs size={56} />,
     description:
