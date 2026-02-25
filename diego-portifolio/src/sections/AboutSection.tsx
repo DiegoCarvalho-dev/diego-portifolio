@@ -2,13 +2,16 @@ import fotoPerfil from "../assets/foto-perfil.png";
 
 export default function AboutSection() {
   const handleDownloadCV = () => {
-    const confirmDownload = window.confirm(
-      "Aviso:\n\nEste currículo foi criado no início da minha carreira, então algumas informações podem estar desatualizadas.\n\nDeseja continuar?"
-    );
-
-    if (confirmDownload) {
-      window.open("/cv/Diego_Carvalho_CV.pdf", "_blank");
-    }
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const cvUrl = `${baseUrl}cv/Diego_Carvalho_CV.pdf`;
+    
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
