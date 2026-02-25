@@ -3,6 +3,8 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
 
 import {
   FaHtml5,
@@ -11,7 +13,7 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiVuedotjs, SiTailwindcss, SiQuasar, SiKotlin } from "react-icons/si";
+import { SiVuedotjs, SiTailwindcss, SiQuasar, SiKotlin, SiTypescript, SiExpo } from "react-icons/si";
 
 export default function ProjectsSection() {
   return (
@@ -139,26 +141,77 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          {/* Projeto Mobile */}
+          {/* Projeto Mobile 5 */}
           <div
-            className="space-y-4 sm:space-y-6 md:col-span-2 flex flex-col items-center text-center"
+            className="space-y-4 sm:space-y-6 text-center"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <img
+              src={project5}
+              alt="Projeto Mobile 1"
+              className="w-full max-w-xs mx-auto h-48 sm:h-56 md:h-64 lg:h-72 object-contain lg:-translate-x-8 xl:-translate-x-12"
+            />
+
+            <div className="space-y-2 max-w-xs mx-auto text-center px-2 lg:-translate-x-8 xl:-translate-x-10">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">FocusFlow</h3>
+              <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Aplicativo mobile focado em produtividade utilizando técnica Pomodoro.
+              </p>
+
+              <div className="flex justify-center gap-3 text-lg">
+                <SiKotlin className="text-purple-600" />
+              </div>
+            </div>
+          </div>
+
+          {/* Projeto Mobile 6 */}
+          <div
+            className="space-y-4 sm:space-y-6 text-center"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <img
+              src={project6}
+              alt="Projeto Mobile 2"
+              className="w-full max-w-xs mx-auto h-48 sm:h-56 md:h-64 lg:h-72 object-contain lg:translate-x-8 xl:translate-x-12"
+            />
+
+            <div className="space-y-2 max-w-xs mx-auto text-center px-2 lg:translate-x-8 xl:translate-x-10">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">GymPro</h3>
+              <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                O GymPro é um SaaS completo para academias. Ele conecta Personal Trainers e Alunos em uma única plataforma, permitindo a criação, gestão e execução de treinos personalizados.
+              </p>
+
+              <div className="flex justify-center gap-3 text-lg">
+                <FaReact className="text-cyan-400" />
+                <SiTypescript className="text-blue-500" />
+              </div>
+            </div>
+          </div>
+          
+          {/* Projeto 7 */}
+          <div
+            className="md:col-span-2 flex flex-col items-center text-center space-y-6"
             data-aos="fade-up"
             data-aos-duration="1300"
           >
             <img
-              src={project5}
-              alt="Projeto Mobile"
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm h-48 sm:h-56 md:h-64 lg:h-72 object-contain"
+              src={project7}
+              alt="Projeto Barbearia"
+              className="w-full max-w-md h-56 sm:h-64 md:h-72 object-contain"
             />
 
-            <div className="space-y-2 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm text-center px-2 sm:px-0">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">FocusFlow</h3>
-              <p className="text-zinc-400 text-xs xs:text-sm sm:text-sm md:text-sm leading-relaxed">
-                Aplicativo Android nativo desenvolvido em Kotlin + Jetpack Compose para produtividade com técnica Pomodoro.
+            <div className="space-y-2 max-w-md text-center px-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Corte Imperial</h3>
+              <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                Este projeto é um site institucional completo desenvolvido para a Barbearia Corte Imperial, uma barbearia premium com foco em experiência do cliente e serviços de alta qualidade.
               </p>
 
-              <div className="flex justify-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-xl">
-                <SiKotlin className="text-purple-500" />
+              <div className="flex justify-center gap-3 text-lg">
+                <FaReact className="text-cyan-400" />
+                <SiTypescript className="text-blue-500" />
+                <FaHtml5 className="text-orange-500" />
               </div>
             </div>
           </div>
