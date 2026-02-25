@@ -13,7 +13,7 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiVuedotjs, SiTailwindcss, SiQuasar, SiKotlin, SiTypescript, SiExpo } from "react-icons/si";
+import { SiVuedotjs, SiTailwindcss, SiQuasar, SiKotlin, SiTypescript } from "react-icons/si";
 
 export default function ProjectsSection() {
   return (
