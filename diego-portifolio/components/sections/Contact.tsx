@@ -44,21 +44,28 @@ export default function Contact({ locale, dict }: { locale: Locale; dict: HomeDi
   ];
 
   return (
-    <section id={id} className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
+    <section id={id} className="mx-auto max-w-5xl px-4 py-14 sm:py-20">
       <h2 className="text-2xl font-semibold sm:text-3xl">{dict.title}</h2>
-      <ul className="mt-8 space-y-3">
+      <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {rows.map((row) => (
-          <li key={row.label} className="flex flex-wrap items-center gap-x-3 gap-y-1">
-            <span className="inline-flex w-28 items-center gap-2 text-sm font-medium text-heading">
-              {row.icon}
-              {row.label}
-            </span>
+          <li key={row.label}>
             <a
               href={row.href}
-              className="text-sm text-accent underline-offset-4 hover:underline"
+              className="group flex items-center gap-4 rounded-xl border border-line bg-surface p-4 transition-colors duration-150 hover:border-accent-deep"
               {...(row.external ? { rel: "noopener noreferrer", target: "_blank" } : {})}
             >
-              {row.value}
+              <span
+                aria-hidden="true"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-deep/15 text-accent"
+              >
+                {row.icon}
+              </span>
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold text-heading">{row.label}</span>
+                <span className="block truncate text-sm text-muted transition-colors duration-150 group-hover:text-accent">
+                  {row.value}
+                </span>
+              </span>
             </a>
           </li>
         ))}
