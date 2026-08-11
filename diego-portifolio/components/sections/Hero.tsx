@@ -6,11 +6,13 @@ export default function Hero({ dict, locale }: { dict: HeroDict; locale: Locale 
   const projectsHref = locale === "pt" ? "#projetos" : "#projects";
 
   return (
-    <section className="mx-auto max-w-3xl px-4 pb-16 pt-14 sm:pb-20 sm:pt-20">
+    <section className="mx-auto max-w-5xl px-4 pb-16 pt-14 sm:pb-20 sm:pt-20">
       <h1 className="text-4xl font-semibold sm:text-5xl">{dict.name}</h1>
       <p className="mt-3 text-lg font-medium text-accent sm:text-xl">{dict.role}</p>
 
       <p className="mt-6 max-w-[68ch] leading-relaxed text-fg sm:text-lg">{dict.positioning}</p>
+
+      <p className="mt-4 max-w-[68ch] leading-relaxed text-muted">{dict.positioningDetail}</p>
 
       <p className="mt-4 text-sm text-muted">{dict.availability}</p>
 

@@ -4,7 +4,7 @@ export const otherProjects: OtherProject[] = [
   {
     title: "MicroPigmentação Capilar",
     description:
-      "Um site institucional moderno e responsivo, desenvolvido para apresentar serviços de Micropigmentação Capilar, com foco em conversão, clareza de informação e experiência do usuário.",
+      "Um site institucional moderno e responsivo, desenvolvido durante o estágio na Docax para apresentar serviços de Micropigmentação Capilar, com foco em conversão, clareza de informação e experiência do usuário.",
     stack: ["HTML5", "Vue.js", "Tailwind CSS"],
     image: "/images/projects/micropigmentacao.webp",
     imageAlt:

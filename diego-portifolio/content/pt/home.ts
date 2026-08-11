@@ -6,6 +6,8 @@ export const home: HomeDict = {
     role: "Engenheiro de Software Full Stack",
     positioning:
       "Construo produtos de ponta a ponta — interface, servidor, aplicativo móvel e banco de dados. Já entreguei plataformas de monitoramento industrial em tempo real, um SaaS multi-tenant com isolamento de dados validado por testes automatizados e um aplicativo mobile corporativo completo.",
+    positioningDetail:
+      "No dia a dia trabalho com React, Next.js e React Native (Expo) na interface, Python (FastAPI), Laravel e Node.js no servidor e PostgreSQL, MySQL e MongoDB nos dados — com Docker, testes automatizados e integração contínua como parte normal do fluxo. Curso Ciência da Computação na Universidade Potiguar.",
     availability: "Natal/RN · Disponível para presencial, híbrido ou remoto",
     seeProjects: "Ver projetos",
     downloadCV: "Baixar currículo (PDF)",
@@ -74,7 +76,7 @@ export const home: HomeDict = {
       {
         role: "Engenheiro de Software Full Stack (Estágio)",
         org: "Dice Tecnologia",
-        place: "Natal/RN",
+        place: "Remoto — empresa do Rio Grande do Sul",
         period: "fev/2026 – atual",
         body: "Atuação full stack em cinco produtos: monitoramento industrial, aplicativo mobile corporativo, plataforma de ensino corporativo, sinalização digital e API multiproduto. Front-end, back-end, mobile, modelagem de banco e infraestrutura em contêiner.",
         highlights: [
@@ -92,7 +94,10 @@ export const home: HomeDict = {
   },
   about: {
     title: "Sobre",
-    body: "Sou desenvolvedor full stack e curso Ciência da Computação na Universidade Potiguar, com conclusão prevista para dezembro de 2028. Gosto do tipo de problema que não se resolve só escrevendo tela: como garantir que o dado de um cliente nunca apareça para outro, como fazer um gráfico com milhares de pontos abrir rápido, como deixar uma regra de negócio impossível de burlar por descuido. Trabalho bem em equipe, reviso código por pull request e escrevo o que decidi antes de implementar — porque decisão que não está escrita vira discussão de novo três meses depois.",
+    body: [
+      "Sou desenvolvedor full stack e curso Ciência da Computação na Universidade Potiguar, com conclusão prevista para dezembro de 2028. Gosto do tipo de problema que não se resolve só escrevendo tela: como garantir que o dado de um cliente nunca apareça para outro, como fazer um gráfico com milhares de pontos abrir rápido, como deixar uma regra de negócio impossível de burlar por descuido.",
+      "Trabalho bem em equipe, reviso código por pull request e escrevo o que decidi antes de implementar — porque decisão que não está escrita vira discussão de novo três meses depois.",
+    ],
     photoAlt: "Foto de Diego Carvalho",
   },
   contact: {

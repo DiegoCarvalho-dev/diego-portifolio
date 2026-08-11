@@ -6,6 +6,8 @@ export const home: HomeDict = {
     role: "Full Stack Software Engineer",
     positioning:
       "I build products end to end — interface, server, mobile app, and database. I have shipped real-time industrial monitoring platforms, a multi-tenant SaaS with data isolation enforced by automated tests, and a complete corporate mobile app.",
+    positioningDetail:
+      "Day to day I work with React, Next.js, and React Native (Expo) on the interface, Python (FastAPI), Laravel, and Node.js on the server, and PostgreSQL, MySQL, and MongoDB on the data side — with Docker, automated tests, and continuous integration as a normal part of the workflow. I study Computer Science at Universidade Potiguar.",
     availability: "Natal, Brazil · Open to on-site, hybrid, or remote",
     seeProjects: "See projects",
     downloadCV: "Download résumé (PDF)",
@@ -71,7 +73,7 @@ export const home: HomeDict = {
       {
         role: "Full Stack Software Engineer (Intern)",
         org: "Dice Tecnologia",
-        place: "Natal, Brazil",
+        place: "Remote — company based in Rio Grande do Sul, Brazil",
         period: "Feb 2026 – present",
         body: "Full-stack work on five products: industrial monitoring, a corporate mobile app, a corporate learning platform, digital signage, and a multi-product API. Front end, back end, mobile, database modeling, and containerized infrastructure.",
         highlights: [
@@ -89,7 +91,10 @@ export const home: HomeDict = {
   },
   about: {
     title: "About",
-    body: "I am a full-stack developer studying Computer Science at Universidade Potiguar, graduating in December 2028. I like the kind of problem that cannot be solved just by building screens: how to guarantee that one customer's data never shows up for another, how to make a chart with thousands of points open fast, how to make a business rule impossible to bypass by accident. I work well in a team, review code through pull requests, and write down decisions before implementing them — because a decision that is not written down becomes the same discussion again three months later.",
+    body: [
+      "I am a full-stack developer studying Computer Science at Universidade Potiguar, graduating in December 2028. I like the kind of problem that cannot be solved just by building screens: how to guarantee that one customer's data never shows up for another, how to make a chart with thousands of points open fast, how to make a business rule impossible to bypass by accident.",
+      "I work well in a team, review code through pull requests, and write down decisions before implementing them — because a decision that is not written down becomes the same discussion again three months later.",
+    ],
     photoAlt: "Photo of Diego Carvalho",
   },
   contact: {

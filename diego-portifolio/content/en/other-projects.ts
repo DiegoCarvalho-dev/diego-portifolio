@@ -4,7 +4,7 @@ export const otherProjects: OtherProject[] = [
   {
     title: "MicroPigmentação Capilar",
     description:
-      "A modern, responsive institutional website built to present scalp micropigmentation services, focused on conversion, clarity of information, and user experience.",
+      "A modern, responsive institutional website built during my internship at Docax to present scalp micropigmentation services, focused on conversion, clarity of information, and user experience.",
     stack: ["HTML5", "Vue.js", "Tailwind CSS"],
     image: "/images/projects/micropigmentacao.webp",
     imageAlt:

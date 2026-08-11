@@ -15,6 +15,9 @@ export interface UIDict {
   navLabel: string;
   nav: NavItem[];
   footerRepoLabel: string;
+  /** títulos das colunas do rodapé */
+  footerNavTitle: string;
+  footerContactTitle: string;
   imagePlaceholderLabel: string;
 }
 
@@ -22,6 +25,8 @@ export interface HeroDict {
   name: string;
   role: string;
   positioning: string;
+  /** segundo parágrafo: stack do dia a dia e formação */
+  positioningDetail: string;
   availability: string;
   seeProjects: string;
   downloadCV: string;
@@ -49,7 +54,7 @@ export interface HomeDict {
   other: { title: string };
   stack: { title: string; groups: { name: string; items: string }[] };
   experience: { title: string; items: ExperienceItem[] };
-  about: { title: string; body: string; photoAlt: string };
+  about: { title: string; body: string[]; photoAlt: string };
   contact: { title: string; emailLabel: string; whatsappLabel: string; downloadCV: string };
 }
 

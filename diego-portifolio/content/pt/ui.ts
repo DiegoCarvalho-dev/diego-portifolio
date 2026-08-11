@@ -14,5 +14,7 @@ export const ui: UIDict = {
     { label: "Contato", href: "/#contato" },
   ],
   footerRepoLabel: "Código-fonte deste site",
+  footerNavTitle: "Navegação",
+  footerContactTitle: "Contato",
   imagePlaceholderLabel: "Imagem em breve",
 };
