@@ -1,0 +1,34 @@
+{
+  "/images/foto-perfil.webp": {
+    "width": 800,
+    "height": 1067
+  },
+  "/images/projects/b2bit.webp": {
+    "width": 1600,
+    "height": 1043
+  },
+  "/images/projects/corte-imperial.webp": {
+    "width": 1600,
+    "height": 1043
+  },
+  "/images/projects/docaedu.webp": {
+    "width": 1600,
+    "height": 1043
+  },
+  "/images/projects/executai.webp": {
+    "width": 1600,
+    "height": 1043
+  },
+  "/images/projects/focusflow.webp": {
+    "width": 800,
+    "height": 1587
+  },
+  "/images/projects/gympro.webp": {
+    "width": 800,
+    "height": 1494
+  },
+  "/images/projects/micropigmentacao.webp": {
+    "width": 1600,
+    "height": 1043
+  }
+}
