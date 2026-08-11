@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/*
+ * Tokens de tema — paleta do currículo.
+ * Tema escuro é o padrão (:root); o claro é aplicado pela classe .light no <html>.
+ * --accent é o azul seguro para TEXTO (contraste ≥ 4.5:1 sobre --bg);
+ * --accent-deep é o azul da identidade (#3c6ea5) para preenchimentos e bordas.
+ */
+:root {
+  --bg: #0f1720;
+  --surface: #16212e;
+  --heading: #e8edf3;
+  --fg: #e8edf3;
+  --muted: #9aa8b8;
+  --line: #243346;
+  --accent: #7fb0e6;
+  --accent-deep: #3c6ea5;
+  --navy: #16304d;
+  color-scheme: dark;
+}
+
+.light {
+  --bg: #ffffff;
+  --surface: #f2f6fa;
+  --heading: #16304d;
+  --fg: #22262b;
+  --muted: #5a616b;
+  --line: #c3ccd6;
+  --accent: #3c6ea5;
+  --accent-deep: #3c6ea5;
+  --navy: #16304d;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-heading: var(--heading);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-navy: var(--navy);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    color: var(--heading);
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--accent-deep);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+/* Ícone do alternador de tema: o CSS decide qual aparece, sem estado no React. */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.light .theme-toggle .icon-sun {
+  display: block;
+}
+
+.light .theme-toggle .icon-moon {
+  display: none;
+}
+
+/*
+ * Fade sutil na entrada de seção (progressive enhancement):
+ * só se aplica quando há JS (html.js) e o usuário não pediu menos movimento.
+ * Sem JS, o conteúdo fica visível desde o primeiro paint.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    translate: 0 0.75rem;
+    transition:
+      opacity 250ms ease-out,
+      translate 250ms ease-out;
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
