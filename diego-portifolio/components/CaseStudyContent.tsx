@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import type { CaseStudy, CaseStudyDict, Locale } from "@/content/types";
 import CaseImage from "@/components/CaseImage";
@@ -15,13 +14,13 @@ export default function CaseStudyContent({ locale, dict, item }: Props) {
 
   return (
     <main id="main" className="mx-auto max-w-3xl px-4 py-12 sm:py-16">
-      <Link
+      <a
         href={backHref}
         className="inline-flex items-center gap-2 text-sm font-medium text-accent underline-offset-4 hover:underline"
       >
         <ArrowLeft size={15} aria-hidden="true" />
         {dict.backToProjects}
-      </Link>
+      </a>
 
       <article className="mt-8">
         <header>

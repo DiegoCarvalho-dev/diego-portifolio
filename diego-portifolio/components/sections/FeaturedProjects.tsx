@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { CaseStudyDict, HomeDict, Locale } from "@/content/types";
 import { casePath } from "@/lib/routes";
@@ -28,9 +27,9 @@ export default function FeaturedProjects({ locale, dict, cases }: Props) {
                 <p className="mb-2 text-xs text-muted">{item.confidentialityLabel}</p>
               ) : null}
               <h3 className="font-sans text-lg font-semibold text-heading">
-                <Link href={casePath(locale, item.slug)} className="after:absolute after:inset-0">
+                <a href={casePath(locale, item.slug)} className="after:absolute after:inset-0">
                   {item.title}
-                </Link>
+                </a>
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{item.cardSummary}</p>
               <ul className="mt-3 flex flex-wrap gap-1.5">

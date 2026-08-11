@@ -8,8 +8,11 @@ export const inter = Inter({
   variable: "--font-inter",
 });
 
+// preload: false — a serifa só aparece em títulos (que não são o LCP);
+// sem preload ela não disputa banda com a fonte do corpo no primeiro paint.
 export const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-source-serif",
+  preload: false,
 });
