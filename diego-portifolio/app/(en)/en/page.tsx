@@ -1,10 +1,5 @@
-import Hero from "@/components/sections/Hero";
-import { home } from "@/content/en/home";
+import HomeContent from "@/components/HomeContent";
 
 export default function HomePage() {
-  return (
-    <main id="main">
-      <Hero dict={home.hero} locale="en" />
-    </main>
-  );
+  return <HomeContent locale="en" />;
 }

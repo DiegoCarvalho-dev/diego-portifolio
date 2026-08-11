@@ -2,15 +2,20 @@ import fs from "node:fs";
 import path from "node:path";
 import { Image as ImageIcon } from "lucide-react";
 import manifest from "@/lib/image-manifest.json";
+import type { ImageAspect } from "@/content/types";
 
-type Aspect = "16/10" | "9/19.5";
+const RATIOS: Record<ImageAspect, string> = {
+  "16/10": "16 / 10",
+  "9/19.5": "9 / 19.5",
+  "3/4": "3 / 4",
+};
 
 interface Props {
   /** caminho dentro de public/, ex.: /images/projects/comanda-ai.webp */
   src: string;
   alt: string;
   /** proporção reservada quando a imagem ainda não existe */
-  aspect: Aspect;
+  aspect: ImageAspect;
   /** texto do placeholder ("Imagem em breve") */
   placeholderLabel: string;
   /**
@@ -41,8 +46,7 @@ export default function ProjectImage({
   const dims = DIMENSIONS[src];
 
   if (!exists) {
-    const ratio = aspect === "16/10" ? "16 / 10" : "9 / 19.5";
-    const boxRatio = fit === "box" ? "16 / 10" : ratio;
+    const boxRatio = fit === "box" ? "16 / 10" : RATIOS[aspect];
     return (
       <div
         role="img"

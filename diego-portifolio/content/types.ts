@@ -60,9 +60,33 @@ export interface OtherProject {
   imageAlt: string;
 }
 
+export type ImageAspect = "16/10" | "9/19.5" | "3/4";
+
 export type CaseImage =
-  | { kind: "photo"; src: string; alt: string; aspect: "16/10" | "9/19.5" }
+  | { kind: "photo"; src: string; alt: string; aspect: ImageAspect }
   | { kind: "diagram"; id: "iiot" | "hr" };
+
+export interface DiagramsDict {
+  iiot: {
+    title: string;
+    sensors: string;
+    broker: string;
+    api: string;
+    db: string;
+    web: string;
+    mobile: string;
+    stream: string;
+  };
+  hr: {
+    title: string;
+    importers: string;
+    api: string;
+    db: string;
+    portal: string;
+    manager: string;
+    tenancy: string;
+  };
+}
 
 export interface CaseStudy {
   slug: string;
