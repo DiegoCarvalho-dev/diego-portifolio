@@ -38,6 +38,8 @@ export interface ExperienceItem {
   place?: string;
   period: string;
   body: string;
+  /** feitos de maior peso, exibidos como lista curta */
+  highlights?: string[];
 }
 
 export interface HomeDict {
@@ -91,6 +93,8 @@ export interface DiagramsDict {
 export interface CaseStudy {
   slug: string;
   title: string;
+  /** período de desenvolvimento (ex.: "jul/2026 – atual") */
+  period?: string;
   cardSummary: string;
   stack: string[];
   /** rótulo de confidencialidade (apenas nos projetos profissionais) */

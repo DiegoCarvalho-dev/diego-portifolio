@@ -27,6 +27,13 @@ export default function Experience({
               {item.period}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-fg">{item.body}</p>
+            {item.highlights?.length ? (
+              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-fg">
+                {item.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+            ) : null}
           </li>
         ))}
       </ol>

@@ -49,19 +49,22 @@ export const home: HomeDict = {
       {
         name: "Back-end",
         items:
-          "Laravel, Filament, FastAPI, Flask, Node.js, API REST, JWT, WebSocket, SSE, MQTT, workers e filas",
+          "Laravel, Filament, FastAPI, Flask, Node.js, API REST, JWT e refresh token, WebSocket, SSE, MQTT, workers e filas, multi-tenancy",
       },
       {
         name: "Dados",
-        items: "PostgreSQL, MySQL, MongoDB, Firebase / Firestore, Redis, SQLAlchemy, Eloquent",
+        items:
+          "PostgreSQL, MySQL, MongoDB, Firebase / Firestore, Redis, SQLAlchemy, Eloquent, modelagem relacional e NoSQL, migrations, índices e otimização de consultas",
       },
       {
         name: "Infra",
-        items: "Docker, Docker Compose, GitHub Actions, AWS (IoT Core), Git, Azure DevOps",
+        items:
+          "Docker, Docker Compose, GitHub Actions, AWS (IoT Core), armazenamento de objetos S3-compatível, Git, Azure DevOps",
       },
       {
         name: "Qualidade",
-        items: "PHPUnit, pytest, testes unitários e de feature, code review por pull request",
+        items:
+          "PHPUnit, pytest, testes unitários e de feature, code review por pull request, Clean Code, SOLID, arquitetura MVC e em camadas",
       },
     ],
   },
@@ -74,6 +77,10 @@ export const home: HomeDict = {
         place: "Natal/RN",
         period: "fev/2026 – atual",
         body: "Atuação full stack em cinco produtos: monitoramento industrial, aplicativo mobile corporativo, plataforma de ensino corporativo, sinalização digital e API multiproduto. Front-end, back-end, mobile, modelagem de banco e infraestrutura em contêiner.",
+        highlights: [
+          "Principal responsável técnico pelo aplicativo mobile corporativo em React Native (Expo): autenticação com renovação concorrente de token, notificações push e paridade total de funcionalidades com a versão web.",
+          "Modelagem e otimização de bases relacionais e NoSQL: constraints e índices compostos por cliente em PostgreSQL, índices para as consultas críticas em MongoDB e agregação histórica de séries temporais, eliminando travamentos em consultas longas.",
+        ],
       },
       {
         role: "Desenvolvedor Web (Estágio)",

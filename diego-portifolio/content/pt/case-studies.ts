@@ -15,6 +15,7 @@ export const caseStudies: CaseStudyDict = {
     {
       slug: "comanda-ai",
       title: "Comanda Aí — SaaS multi-tenant para restaurantes",
+      period: "jul/2026 – atual",
       cardSummary:
         "Cardápio por QR code, painel do garçom e tickets de cozinha, com isolamento de dados entre restaurantes validado em integração contínua.",
       stack: [
@@ -40,7 +41,7 @@ export const caseStudies: CaseStudyDict = {
         },
         {
           lead: "Regras de negócio no modelo, não no controller",
-          body: "a mudança de status de um pedido só acontece por um método dedicado, e escrita direta lança exceção. A regra não depende de quem chama.",
+          body: "a mudança de status de um pedido só acontece por um método dedicado, escrita direta lança exceção e invariantes como a unicidade de comanda aberta por mesa são garantidas no próprio modelo. A regra não depende de quem chama.",
         },
         {
           lead: "Teste de isolamento como portão de CI",
@@ -65,6 +66,7 @@ export const caseStudies: CaseStudyDict = {
     {
       slug: "driving",
       title: "Driving — Aplicativo de gestão para autoescolas",
+      period: "jun/2026 – jul/2026",
       cardSummary:
         "App Flutter com perfis de aluno e administrador, agenda de aulas e gestão de alunos, instrutores e veículos sobre Firebase.",
       stack: ["Flutter", "Dart", "Firebase Authentication", "Cloud Firestore"],
@@ -116,7 +118,7 @@ export const caseStudies: CaseStudyDict = {
       problem:
         "Um painel fixo não serve: cada cliente quer o seu. E gráfico com série temporal longa trava o navegador.",
       built:
-        "Um construtor de painéis com catálogo de mais de 30 modelos de widget, configuração por widget, atualização em tempo real via MQTT e streaming para o navegador — entregue em web, em aplicativo móvel nativo e na API que sustenta os dois. Também uma planta industrial 3D interativa, com catálogo de máquinas, layout salvo por cliente e vínculo com dispositivos reais.",
+        "Um construtor de painéis com catálogo de mais de 30 modelos de widget, configuração por widget, atualização em tempo real via MQTT e streaming para o navegador — entregue em web, em aplicativo móvel nativo e na API que sustenta os dois. Também uma planta industrial 3D interativa, com catálogo de máquinas, layout salvo por cliente com controle de concorrência, vínculo com dispositivos reais e depois portada para o mobile — e o pipeline que gera esses modelos 3D com IA generativa (Google Gemini), com worker assíncrono em Python.",
       decisions: [
         {
           lead: "Redução de pontos com algoritmo de downsampling",
@@ -129,6 +131,10 @@ export const caseStudies: CaseStudyDict = {
         {
           lead: "Otimização medida, não adivinhada",
           body: "deduplicação de requisições, suspensão da atualização automática quando o coletor está indisponível e índices dedicados às consultas críticas.",
+        },
+        {
+          lead: "Código gerado por IA tratado como não confiável",
+          body: "o modelo 3D gerado pelo Gemini roda num worker assíncrono em Python, é validado em sandbox e só entra no catálogo depois de passar por um gate de qualidade automatizado.",
         },
       ],
       result:

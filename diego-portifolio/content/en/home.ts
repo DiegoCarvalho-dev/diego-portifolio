@@ -46,19 +46,22 @@ export const home: HomeDict = {
       {
         name: "Back end",
         items:
-          "Laravel, Filament, FastAPI, Flask, Node.js, REST APIs, JWT, WebSocket, SSE, MQTT, workers and queues",
+          "Laravel, Filament, FastAPI, Flask, Node.js, REST APIs, JWT with refresh tokens, WebSocket, SSE, MQTT, workers and queues, multi-tenancy",
       },
       {
         name: "Data",
-        items: "PostgreSQL, MySQL, MongoDB, Firebase / Firestore, Redis, SQLAlchemy, Eloquent",
+        items:
+          "PostgreSQL, MySQL, MongoDB, Firebase / Firestore, Redis, SQLAlchemy, Eloquent, relational and NoSQL modeling, migrations, indexes and query optimization",
       },
       {
         name: "Infrastructure",
-        items: "Docker, Docker Compose, GitHub Actions, AWS (IoT Core), Git, Azure DevOps",
+        items:
+          "Docker, Docker Compose, GitHub Actions, AWS (IoT Core), S3-compatible object storage, Git, Azure DevOps",
       },
       {
         name: "Quality",
-        items: "PHPUnit, pytest, unit and feature tests, code review through pull requests",
+        items:
+          "PHPUnit, pytest, unit and feature tests, code review through pull requests, Clean Code, SOLID, MVC and layered architecture",
       },
     ],
   },
@@ -71,6 +74,10 @@ export const home: HomeDict = {
         place: "Natal, Brazil",
         period: "Feb 2026 – present",
         body: "Full-stack work on five products: industrial monitoring, a corporate mobile app, a corporate learning platform, digital signage, and a multi-product API. Front end, back end, mobile, database modeling, and containerized infrastructure.",
+        highlights: [
+          "Lead technical owner of the corporate mobile app in React Native (Expo): authentication with concurrent token refresh, push notifications, and full feature parity with the web version.",
+          "Modeling and optimization of relational and NoSQL databases: per-client constraints and composite indexes in PostgreSQL, indexes for the critical queries in MongoDB, and historical aggregation of time series, eliminating freezes in long queries.",
+        ],
       },
       {
         role: "Web Developer (Intern)",

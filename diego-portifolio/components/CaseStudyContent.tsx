@@ -28,6 +28,7 @@ export default function CaseStudyContent({ locale, dict, item }: Props) {
             <p className="mb-3 text-xs text-muted">{item.confidentialityLabel}</p>
           ) : null}
           <h1 className="text-3xl font-semibold sm:text-4xl">{item.title}</h1>
+          {item.period ? <p className="mt-2 text-sm text-muted">{item.period}</p> : null}
           <p className="mt-4 max-w-[68ch] leading-relaxed text-muted">{item.cardSummary}</p>
           <div className="mt-8">
             <CaseImage
