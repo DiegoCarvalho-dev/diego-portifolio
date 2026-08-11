@@ -10,7 +10,7 @@ export default function Experience({
   const id = locale === "pt" ? "experiencia" : "experience";
 
   return (
-    <section id={id} className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
+    <section id={id} className="mx-auto max-w-5xl px-4 py-14 sm:py-20">
       <h2 className="text-2xl font-semibold sm:text-3xl">{dict.title}</h2>
       <ol className="mt-8 space-y-8 border-l border-line pl-6">
         {dict.items.map((item) => (
@@ -26,9 +26,9 @@ export default function Experience({
               {item.place ? `${item.place} · ` : ""}
               {item.period}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-fg">{item.body}</p>
+            <p className="mt-2 max-w-[75ch] text-sm leading-relaxed text-fg">{item.body}</p>
             {item.highlights?.length ? (
-              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-fg">
+              <ul className="mt-2 max-w-[75ch] list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-fg">
                 {item.highlights.map((highlight) => (
                   <li key={highlight}>{highlight}</li>
                 ))}

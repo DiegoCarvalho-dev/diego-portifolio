@@ -12,9 +12,9 @@ export default function OtherProjects({ locale, dict, projects }: Props) {
   const placeholderLabel = getUI(locale).imagePlaceholderLabel;
 
   return (
-    <section className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
+    <section className="mx-auto max-w-5xl px-4 py-14 sm:py-20">
       <h2 className="text-2xl font-semibold sm:text-3xl">{dict.title}</h2>
-      <div className="mt-8 grid gap-5 sm:grid-cols-2">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <article key={project.title} className="rounded-lg border border-line p-4">
             <ProjectImage

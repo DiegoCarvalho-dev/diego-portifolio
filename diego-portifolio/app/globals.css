@@ -50,11 +50,12 @@
 @layer base {
   html {
     scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  @media (prefers-reduced-motion: reduce) {
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
   }
 

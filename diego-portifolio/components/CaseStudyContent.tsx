@@ -13,7 +13,7 @@ export default function CaseStudyContent({ locale, dict, item }: Props) {
   const narrowImage = item.image.kind === "photo" && item.image.aspect === "9/19.5";
 
   return (
-    <main id="main" className="mx-auto max-w-3xl px-4 py-12 sm:py-16">
+    <main id="main" className="mx-auto max-w-4xl px-4 py-12 sm:py-16">
       <a
         href={backHref}
         className="inline-flex items-center gap-2 text-sm font-medium text-accent underline-offset-4 hover:underline"
