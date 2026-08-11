@@ -19,7 +19,8 @@ import sharp from "sharp";
 const args = process.argv.slice(2);
 const maxFlag = args.indexOf("--max");
 const maxWidth = maxFlag !== -1 ? Number(args[maxFlag + 1]) : 1600;
-const positional = maxFlag !== -1 ? args.filter((_, i) => i !== maxFlag && i !== maxFlag + 1) : args;
+const positional =
+  maxFlag !== -1 ? args.filter((_, i) => i !== maxFlag && i !== maxFlag + 1) : args;
 const [input, output] = positional;
 
 if (!input || !output || Number.isNaN(maxWidth)) {
@@ -41,7 +42,9 @@ const info = await sharp(path.resolve(input))
   .webp({ quality: 82 })
   .toFile(outputPath);
 
-const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : {};
+const manifest = fs.existsSync(manifestPath)
+  ? JSON.parse(fs.readFileSync(manifestPath, "utf8"))
+  : {};
 manifest[`/images/${output.replace(/\\/g, "/")}`] = { width: info.width, height: info.height };
 
 const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));

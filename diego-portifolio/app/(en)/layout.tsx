@@ -1,15 +1,31 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "@/app/globals.css";
 import { inter, sourceSerif } from "@/lib/fonts";
 import { THEME_SCRIPT } from "@/lib/theme-script";
+import { SITE_URL } from "@/content/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ui } from "@/content/en/ui";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Diego Carvalho — Full Stack Software Engineer",
   description:
     "Portfolio of Diego Carvalho, a full stack software engineer based in Natal, Brazil. End-to-end products: web, mobile, APIs, and databases.",
+  openGraph: {
+    siteName: "Diego Carvalho",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/images/og-en.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark light",
+  themeColor: [{ media: "(prefers-color-scheme: light)", color: "#ffffff" }, { color: "#0f1720" }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
