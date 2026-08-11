@@ -1,2 +1,18 @@
+# dependências
 node_modules/
+
+# builds
 dist/
+out/
+.next/
+
+# artefatos de compilação
+*.tsbuildinfo
+vite.config.js
+
+# ambiente
+.env
+.env*.local
+
+# sistema
+.DS_Store
