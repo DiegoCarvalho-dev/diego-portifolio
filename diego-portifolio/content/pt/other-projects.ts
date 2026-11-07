@@ -63,4 +63,13 @@ export const otherProjects: OtherProject[] = [
     imageAlt:
       "Página inicial do site da barbearia Corte Imperial em um notebook, com máquinas de corte e tesouras sobre uma mesa de madeira",
   },
+  {
+    title: "Dudu Barber Shop",
+    description:
+      "Landing page desenvolvida para apresentar a história, a equipe e os serviços da Dudu Barber Shop, com design responsivo e foco na experiência do cliente.",
+    stack: ["React", "Vite", "JavaScript", "CSS"],
+    image: "/images/projects/dudu-barber-shop.webp",
+    imageAlt:
+      "Página inicial da Dudu Barber Shop em um notebook, com a foto do barbeiro e a frase Seu estilo, nossa história",
+  },
 ];

@@ -63,4 +63,13 @@ export const otherProjects: OtherProject[] = [
     imageAlt:
       "Home page of the Corte Imperial barbershop website on a laptop, with hair clippers and scissors on a wooden table",
   },
+  {
+    title: "Dudu Barber Shop",
+    description:
+      "A responsive landing page presenting Dudu Barber Shop's history, team, and services, with a focus on the customer experience.",
+    stack: ["React", "Vite", "JavaScript", "CSS"],
+    image: "/images/projects/dudu-barber-shop.webp",
+    imageAlt:
+      "Dudu Barber Shop home page on a laptop, featuring a photo of the barber and the words Your style, our story",
+  },
 ];
